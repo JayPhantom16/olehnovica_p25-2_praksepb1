@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videospēļu vēsture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 2.1. Header -->
+    <header>
+        <div class="logo">🎮 Videospēļu vēsture</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Sākums</a></li>
+                <li><a href="#about">Par izstādi</a></li>
+                <li><a href="#gallery">Galerija</a></li>
+                <li><a href="#carousel">Karuselis</a></li>
+                <li><a href="#footer">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2.2. Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Videospēļu vēsture</h1>
+                <p>Ienirstiet aizraujošajā virtuālo pasaulu attīstības ceļā no pirmajiem pikseļiem līdz mūsdienu reālistiskajām spēlēm.</p>
+                <a href="#about" class="btn">Apskatīt izstādi</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-games.jpg" alt="Videospēļu konsoles cauri gadu desmitiem">
+            </div>
+        </section>
+
+        <!-- 2.3. About -->
+        <section id="about" class="about-section">
+            <h2>Par izstādi</h2>
+            <p><strong>Mērķis</strong> ir parādīt to, kā tehnoloģiju progress ir mainījis spēļu industriju, kultūru un cilvēku savstarpējo mijiedarbību vairāku gadu desmitu laikā.</p>
+            <p>Sākot ar vienkāršiem arkādes automātiem un beidzot ar masīvām tiešsaistes pasaulēm, šī izstāde piedāvā unikālu iespēju iepazīties ar nozīmīgākajiem pagrieziena punktiem spēļu vēsturē.</p>
+        </section>
+
+        <!-- 2.4. Gallery  -->
+        <section id="gallery" class="gallery-section">
+            <h2>Attēlu kolekcija</h2>
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <img src="images/image1.jpg" alt="Pirmie arkādes automāti">
+                    <h3>Arkādes zelta laikmets</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image2.jpg" alt="Klasiskā 8 bitu konsole">
+                    <h3>8 bitu revolūcija</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image3.jpg" alt="16 bitu ēras spēle">
+                    <h3>16 bitu konkurence</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image4.jpg" alt="Pāreja uz 3D grafiku">
+                    <h3>3D grafikas ienākšana</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image5.jpg" alt="Rokas spēļu konsoles">
+                    <h3>Mobilo konsole attīstība</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image6.jpg" alt="Mūsdienu spēļu dators">
+                    <h3>Mūsdienu Gaming</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image7.jpg" alt="Virtuālā realitāte VR">
+                    <h3>Virtuālā realitāte</h3>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image8.jpg" alt="E-sporta turnīrs">
+                    <h3>E-sports un sabiedrība</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- 2.5. Image Carousel -->
+        <section id="carousel" class="carousel-section">
+            <h2>Leģendārās konsoles</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn">&#10094; Iepriekšējais</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-slide">
+                        <img src="images/image1.jpg" alt="Karuselis 1">
+                        <p class="carousel-caption">1. leģendārā konsole / iekārta</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/image2.jpg" alt="Karuselis 2">
+                        <p class="carousel-caption">2. leģendārā konsole / iekārta</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/image3.jpg" alt="Karuselis 3">
+                        <p class="carousel-caption">3. leģendārā konsole / iekārta</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/image4.jpg" alt="Karuselis 4">
+                        <p class="carousel-caption">4. leģendārā konsole / iekārta</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/image5.jpg" alt="Karuselis 5">
+                        <p class="carousel-caption">5. leģendārā konsole / iekārta</p>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn">Nākamais &#10095;</button>
+            </div>
+            <div class="carousel-controls">
+                <button id="pause-play-btn">Pauze / Atsākt</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 2.6. Footer -->
+    <footer id="footer">
+        <p>&copy; 2026 Virtuālā izstāde „Videospēļu vēsture”. Visas tiesības aizsargātas.</p>
+        <p>Komanda: <strong>Tatjana Oļehnoviča</strong> </p>
+        <p>Kontakti: info@virtualaizstade.lv</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
