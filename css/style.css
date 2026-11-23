@@ -146,27 +146,34 @@ header nav ul li a:hover {
 }
 
 .gallery-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item article {
     background-color: #1f1f1f;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
+    text-align: center;
 }
 
-.gallery-item:hover {
+.gallery-item article:hover {
     transform: translateY(-5px);
 }
 
-.gallery-item img {
+.gallery-item article img {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    display: block;
 }
 
-.gallery-item h3 {
+.gallery-item article h3 {
     padding: 1rem;
     font-size: 1.1rem;
-    text-align: center;
     color: #ffffff;
 }
 
@@ -191,37 +198,63 @@ header nav ul li a:hover {
     margin: 0 auto 1.5rem auto;
 }
 
+
 .carousel-track-container {
-    overflow: hidden;
+    position: relative;
     width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
     border-radius: 8px;
     background-color: #1f1f1f;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
+
 .carousel-slide {
-    display: none; /* js: none => block */
-    padding: 1rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.carousel-slide img {
+.carousel-slide > div {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 350px;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+.carousel-slide > div.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-slide > div img {
+    width: 100%;
+    height: 330px;
     object-fit: cover;
-    border-radius: 5px;
+    display: block;
 }
 
 .carousel-caption {
-    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
     font-size: 1.1rem;
     color: #e0e0e0;
+    background-color: #1f1f1f;
+    margin: 0;
 }
 
 .carousel-btn {
     background-color: #ffb454;
     color: #1a1226;
     border: none;
-    padding: 0.8rem 1rem;
+    padding: 20px 30px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
